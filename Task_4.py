@@ -1,29 +1,44 @@
-user_input_1 = int(input("Enter a value :"))
-user_input_2 = int(input("Enter a value :"))
-user_input_3 = int(input("Enter a value :"))
-
+x=list(map(int,input("Enter the numbers:\n").split(" ")))
 #highest number
-print("The highest of the three is" ,max(user_input_1,user_input_2,user_input_3))
+def find_max(num_list):
+    temp_max = num_list[0]
+    for each_element in num_list:
+        if each_element>temp_max:
+            temp_max = each_element
+    return temp_max
+num_list=x
+print("The maximum value from the given numbers:" ,find_max(num_list))
 
 #lowest number
-print("The lowest of the three is" ,min(user_input_1,user_input_2,user_input_3))
-list=[user_input_1,user_input_2,user_input_3]
+
+def find_min(num_list):
+    temp_min = num_list[0]
+    for each_element in num_list:
+        if each_element<temp_min:
+            temp_min=each_element
+    return temp_min
+num_list=x
+print("The minimum value from the given numbers:" ,find_min(num_list))
 
 #sum of three numbers
-Sum=sum(list)
-print("The sum of three numbers is",Sum)
+def sum(values):
+    total = 0
+    for s in values:
+        total=total+s
+    return total
+values=x
+print("The sum of the numbers" ,sum(values))
 
 #average of three numbers
-import statistics
-Average = statistics.mean(list)
-print("The average of three numbers is" ,Average)
+def Average(s): #num_list (for each_el in nu...)
 
-#squares of three numbers
-Sq1=pow(user_input_1,2)
-Sq2=pow(user_input_2,2)
-Sq3=pow(user_input_3,2)
-print("The square of user_input_1 is" ,Sq1)
-print("The square of user_input_2 is" ,Sq2)
-print("The square of user_input_3 is" ,Sq3)
+    return sum(s) / len(s) #sum is python's func. use sth else. use your sum func.
+s=x
+print("The average of the numbers:" ,Average(s))
 
-
+#square of the given number
+def square_elem(x):
+    z=int(input("Enter an element:\n"))
+    k=z*z
+    return k
+print("The square of the element is:" ,(square_elem(x)))

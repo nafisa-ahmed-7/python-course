@@ -1,7 +1,4 @@
-#import palindrome_check
-
-#var = "abcba"
-#palindrome_check.check_palindrome(var)
+import palindrome_check
 
 def extract_digits(user_input):
     digits_list =[]

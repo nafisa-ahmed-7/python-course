@@ -1,13 +1,18 @@
 user_input = input("Enter a value :\n")
-if user_input.isdigit() :
-    print("It is a number")
-    user_input=int(user_input)
-    if user_input%2==0:
-        print("Yes")
+def num_validation(k):
+    if user_input.isdigit():
+        print("Num verified")
     else:
-        print("No")
+        print("Please retry")
+k=user_input
+print(num_validation(k))
+
+#odd_even numbers
+user_input_1=int(input("Enter a number:\n"))
+if user_input_1%2==0:
+    print("Yes")
 else:
-    print("Please retry")
+    print("No")
 
 
 

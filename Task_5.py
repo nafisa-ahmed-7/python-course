@@ -6,12 +6,30 @@ print(user_input)
 print("Number of characters in the string is" ,len(user_input))
 
 #b.reverse the string
-reverse_name = user_input [::-1]
-print("The reverse of the name: " + user_input + " is " + reverse_name)
+def reverse(value):
+    return value[::-1]
+value=user_input
+print("The reverse of the string is",reverse(value))
 
-#c.Find uppercase and lowercase letters
-print(user_input.isupper())
-print(user_input.islower())
+#c.Find the uppercase letters
+def uppercase(s):
+    temp = ""
+    for char in s:
+        if char.isupper():
+            temp=temp+char
+    return temp
+s=user_input
+print("The uppercase letters in the string are :" ,uppercase(s))
+
+#Find the lowercase letters
+def lowercase(t):
+    temp = ""
+    for char in t:
+        if char.islower():
+            temp=temp+char
+    return temp
+t=user_input
+print("The lowercase letters in the string are :" ,lowercase(t))
 
 #d.Convert the string to uppercase and lowercase letters
 print(user_input.upper())

@@ -1,8 +1,6 @@
 #user_input a list of numbers. Check if all numbers are unique.
 
-user_input = [11,22,33,44,55,11,22,435]
-#comment this later and input from user, split by comma, typecast to int, put in list
-
+user_input = x=list(map(int,input("Enter the numbers:\n").split(" ")))
 if len(user_input) == len(set(user_input)):
     print("All numbers are unique")
 else:
