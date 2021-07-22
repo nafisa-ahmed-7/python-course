@@ -4,7 +4,8 @@
 
 
 user_input = input("Enter a name: \n")
-reverse_name = user_input [::-1] #First point, end point, step
-print("The reverse of the name: " + user_input + " is " + reverse_name)
+def rev(user_input):
+    return user_input [::-1]
+print("The reverse of the name: " + user_input + " is " ,rev(user_input))
 
 #String Functions: .upper, .lower

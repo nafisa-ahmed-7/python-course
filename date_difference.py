@@ -1,6 +1,7 @@
 #User input 2 dates. Find their difference.
 
 import datetime
+
 f_date_year = input("\nEnter 1st year: ")
 f_date_month = input("\n Enter 1st month: ")
 f_date_date = input("\n Enter 1st day: ")

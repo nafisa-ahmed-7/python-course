@@ -24,11 +24,11 @@ fp.close()
 print(count)
 
 #for deleting file
-os.remove("filename here")
+#os.remove("filename here")
 
 #check if file exists:
 #os.path.exists(pathtofile) - if exists, it will return True
 
 #delete folder (directory)
-os.rmdir("folder name")
+#os.rmdir("folder name")
 
